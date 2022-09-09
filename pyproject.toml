@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pyasync-template"
+version = "0.1.0"
+description = ""
+authors = ["menikolaev <devmenikolaev@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = {extras = ["dotenv"], version = "^1.10.2"}
+aiohttp = "^3.8.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

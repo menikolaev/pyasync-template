@@ -1,2 +1,48 @@
 # pyasync-template
-Template for async python project. Independent from any async framework.
+Template for async python project. Independent of any async framework.
+
+TODO:
+- Project structure:
+  - domain models
+    - migrations
+  - services
+  - adpters
+  - handlers
+    - schema description based on pydantic
+  - runners
+  - repositories with db tables
+- Sentry integration
+- PG integration
+- Redis integration
+- RMQ integration
+- DI container
+  - manual via composition root
+  - auto - advanced
+- Async periodical runners
+- Docker configuration
+- Functional tests engine based on docker-compose
+- Migrations
+  - liquibase
+  - other (e.g. alembic)
+- API docs (open api)
+- Linters (flake8/isort/black(?))
+- Strict type checking (mypy)
+- Async framework examples:
+  - FastAPI
+  - Sanic
+  - BlackSheep
+- Git precommit hook
+- (optional) Kubernetes base settings
+- Utils
+  - Logging with customisations (custom config/json output)
+  - Tracing (X-Request-Id)
+    - transport (http/kafka/rmq)
+  - Transport wrappers (http/kafka/rmq)
+  - Mask sensitive data in logs
+  - Metrics
+    - Prometheus (pull model)
+    - StatsD (push model)
+  - Memory tracer
+    - tracemalloc
+    - other (e.g. flamegraph)
+  - Custom pydantic types (optional)
